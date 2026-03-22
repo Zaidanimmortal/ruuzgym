@@ -2,6 +2,9 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Ruuzgym —  Complete Gym Equipment Store</title>
 <meta name="description" content="Ruuzgym supplies commercial and personal gym equipment across Ghana. Iron Throne bench press, treadmills, Smith machines, dumbbells, resistance bands and more. WhatsApp: 0240983421">
@@ -133,12 +136,12 @@ const DEFAULT_PRODUCTS = [
     features:["Premium non-slip mat","Anti-burst exercise ball","Core, stretch & recovery"],
     image:"", wa:"Yoga%20Mat%20and%20Exercise%20Ball"
   },
-  {
-    id:18, num:"18", cat:"accessories",
-    tag:"Accessories", name:"replaceable equipment parts",
-    desc:"Premium non-slip mat and anti-burst exercise ball. Stretching, core work, stability and recovery.",
-    features:["Premium non-slip mat","Anti-burst exercise ball","Core, stretch & recovery"],
-    image:"", wa:"Replaceable%20equipment%20parts"
+ {
+    id:18, num:"18", cat:"services",
+    tag:"Other Services", name:"Repairs & Assembly",
+    desc:"We fix, service and assemble all types of gym equipment. From treadmill motors to cable systems — we keep your gym running.",
+    features:["Treadmill repairs & servicing","Cable system & pulley repairs","Full equipment assembly","All brands & machine types"],
+    image:"", wa:"Equipment%20Repairs%20and%20Assembly"
   },
   {
     id:19, num:"19", cat:"all",
@@ -151,10 +154,18 @@ const DEFAULT_PRODUCTS = [
 ];
 
 const ADMIN_PASSWORD = "$$Mrzaidruuzgym1999$$";
-const STORAGE_KEY    = "ruuzgym_products";
+const STORAGE_KEY     = "ruuzgym_products";
+const VERSION_KEY     = "ruuzgym_version";
+const CURRENT_VERSION = "v3";
 
 function loadProducts(){
   try {
+    const savedVersion = localStorage.getItem(VERSION_KEY);
+    if(savedVersion !== CURRENT_VERSION){
+      localStorage.removeItem(STORAGE_KEY);
+      localStorage.setItem(VERSION_KEY, CURRENT_VERSION);
+      return DEFAULT_PRODUCTS;
+    }
     const saved = localStorage.getItem(STORAGE_KEY);
     if(saved){
       const parsed = JSON.parse(saved);
@@ -170,6 +181,7 @@ function loadProducts(){
 
 function saveProducts(products){
   localStorage.setItem(STORAGE_KEY, JSON.stringify(products));
+  localStorage.setItem(VERSION_KEY, CURRENT_VERSION);
 }
 
 let PRODUCTS = loadProducts();
