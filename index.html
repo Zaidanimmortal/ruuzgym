@@ -162,10 +162,9 @@ function loadProducts(){
   try {
     const savedVersion = localStorage.getItem(VERSION_KEY);
     if(savedVersion !== CURRENT_VERSION){
-      localStorage.removeItem(STORAGE_KEY);
-      localStorage.setItem(VERSION_KEY, CURRENT_VERSION);
-      return DEFAULT_PRODUCTS;
-    }
+  localStorage.setItem(VERSION_KEY, CURRENT_VERSION);
+  // Don't wipe — just fall through and merge below
+}
     const saved = localStorage.getItem(STORAGE_KEY);
     if(saved){
       const parsed = JSON.parse(saved);
