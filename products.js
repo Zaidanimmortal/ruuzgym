@@ -1,216 +1,188 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="theme-color" content="#0b6b45"><title>Ruuzgym Ghana — Build Your Gym</title><meta name="description" content="Ruuzgym supplies quality commercial and personal gym equipment across Ghana. Build your gym, train consistently and stay healthy."><link rel="icon" type="image/png" href="gym brand logo.png"><link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;600;700&family=Bebas+Neue&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"><script src="products.js"></script><style>
-:root{--ink:#101615;--paper:#f6f4ee;--muted:#68706c;--line:#d9ddd5;--green:#0b6b45;--green2:#123f31;--red:#cf2337;--gold:#f4c542;--wa:#25d366;--cream:#ece9df;--shadow:0 18px 48px rgba(16,22,21,.12);--radius:22px}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,Arial,sans-serif;overflow-x:hidden}a{color:inherit}.gh-stripe{display:flex;height:5px}.gh-stripe span{flex:1}.gh-stripe .r{background:var(--red)}.gh-stripe .g{background:var(--gold)}.gh-stripe .gr{background:var(--green)}
-nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(246,244,238,.93);backdrop-filter:blur(14px);border-bottom:1px solid rgba(16,22,21,.1)}.nav-inner{max-width:1240px;margin:auto;height:74px;padding:0 28px;display:flex;align-items:center;justify-content:space-between}.nav-logo img{height:48px;width:auto}.nav-links{list-style:none;display:flex;gap:30px;margin:0}.nav-links a,.nav-wa,.mobile-menu a{font-size:11px;font-weight:800;letter-spacing:.15em;text-transform:uppercase;text-decoration:none}.nav-links a{color:var(--muted)}.nav-links a:hover{color:var(--green)}.nav-wa{background:var(--green);color:#fff;border-radius:999px;padding:13px 18px;display:flex;align-items:center;gap:8px}.nav-wa svg,.btn-wa svg,.cta-wa-btn svg,.footer-wa svg{width:16px;height:16px;fill:currentColor}.hamburger{display:none;flex-direction:column;gap:5px;padding:8px}.hamburger span{width:24px;height:2px;background:var(--ink)}.mobile-menu{display:none}.hero{position:relative;min-height:760px;padding:150px 28px 90px;background:var(--green2);color:#fff;overflow:hidden}.hero:after{content:'';position:absolute;inset:0;background:linear-gradient(125deg,rgba(11,107,69,.95),rgba(18,63,49,.78)),url('https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&w=1800&q=85') center/cover;opacity:.52}.hero-top-stripe{position:absolute;left:0;right:0;top:74px;z-index:2}.hero-grid{position:absolute;inset:0;z-index:1;background-image:linear-gradient(rgba(255,255,255,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.06) 1px,transparent 1px);background-size:70px 70px;opacity:.25}.hero-content{position:relative;z-index:3;max-width:1240px;margin:auto}.hero-eyebrow,.section-eyebrow{font-size:11px;font-weight:800;letter-spacing:.2em;text-transform:uppercase}.hero-eyebrow{color:var(--gold);margin:0 0 22px}.hero-title{font-family:'Bebas Neue',Impact,sans-serif;font-size:clamp(90px,16vw,190px);line-height:.82;letter-spacing:.015em;margin:0;max-width:700px}.hero-title .gold{color:var(--gold)}.hero-tagline{font-family:'Barlow Condensed',sans-serif;font-size:clamp(22px,3vw,34px);letter-spacing:.08em;text-transform:uppercase;margin:24px 0 34px;color:#edf1e9}.hero-tagline strong{color:var(--gold)}.hero-ctas{display:flex;gap:12px;flex-wrap:wrap}.btn-wa,.btn-outline,.cta-wa-btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;text-decoration:none;font-weight:800;font-size:12px;letter-spacing:.08em;text-transform:uppercase;border-radius:999px;padding:16px 22px}.btn-wa,.cta-wa-btn{background:var(--wa);color:#fff}.btn-outline{border:1px solid rgba(255,255,255,.5);color:#fff}.hero-stats{display:flex;gap:36px;margin-top:76px;padding-top:24px;border-top:1px solid rgba(255,255,255,.22);max-width:720px}.hero-stat-num{font-family:'Bebas Neue',sans-serif;font-size:38px;color:var(--gold)}.hero-stat-num span{font-family:Inter,sans-serif;font-size:14px;color:#fff}.hero-stat-label{font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:#c9d5cd;margin-top:3px}.hero-scroll{position:absolute;z-index:3;bottom:28px;right:30px;display:flex;align-items:center;gap:10px;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#c9d5cd}.scroll-bar{width:48px;height:1px;background:var(--gold)}.section-inner{max-width:1240px;margin:auto;padding:110px 28px}.section-eyebrow{color:var(--red);margin-bottom:14px}.section-title{font-family:'Bebas Neue',Impact,sans-serif;font-size:clamp(52px,7vw,90px);line-height:.9;margin:0 0 36px;letter-spacing:.02em}.products{background:var(--paper)}.cat-tabs{display:flex;gap:8px;overflow-x:auto;padding-bottom:12px;margin-bottom:30px}.cat-tab{white-space:nowrap;border:1px solid var(--line);background:transparent;border-radius:999px;padding:11px 15px;font-size:11px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);cursor:pointer}.cat-tab.active,.cat-tab:hover{background:var(--green);color:#fff;border-color:var(--green)}.products-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.product-card{position:relative;background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:14px 18px 22px;overflow:hidden;transition:transform .2s,box-shadow .2s}.product-card:hover{transform:translateY(-5px);box-shadow:var(--shadow)}.product-card.featured{grid-column:span 2;background:var(--green2);color:#fff}.product-card.green-card{background:var(--green);color:#fff}.product-num{position:absolute;top:18px;right:18px;font-family:'Bebas Neue';font-size:25px;color:rgba(16,22,21,.22)}.featured .product-num,.green-card .product-num{color:rgba(255,255,255,.34)}.product-badge{position:absolute;top:18px;left:18px;background:var(--gold);color:var(--ink);font-size:10px;font-weight:900;letter-spacing:.08em;text-transform:uppercase;border-radius:999px;padding:7px 10px}.product-img-wrap{height:280px;border-radius:16px;background:var(--cream);margin-bottom:18px;display:grid;place-items:center;overflow:hidden}.product-img-wrap img{width:100%;height:100%;object-fit:contain;object-position:center}.product-img-placeholder{font-size:12px;text-align:center;color:var(--muted);line-height:1.6}.product-tag{font-size:10px;font-weight:900;letter-spacing:.16em;text-transform:uppercase;color:var(--green);margin:0 0 8px}.featured .product-tag,.green-card .product-tag{color:var(--gold)}.product-name{font-family:'Bebas Neue';font-size:34px;line-height:1;margin:0 0 10px}.product-desc{font-size:13px;line-height:1.55;color:var(--muted);min-height:62px}.featured .product-desc,.green-card .product-desc{color:#d7e1d8}.product-features{padding-left:18px;margin:15px 0 20px;font-size:12px;line-height:1.7;color:var(--muted)}.featured .product-features,.green-card .product-features{color:#e1e8e1}.product-cta{display:inline-flex;text-decoration:none;color:var(--green);font-size:11px;font-weight:900;letter-spacing:.08em;text-transform:uppercase}.featured .product-cta,.green-card .product-cta{color:var(--gold)}.why{background:var(--cream)}.why-grid,.about-inner{display:grid;grid-template-columns:1.1fr .9fr;gap:80px;align-items:start}.why-points{border-top:1px solid var(--line)}.why-point{display:flex;gap:22px;padding:24px 0;border-bottom:1px solid var(--line)}.why-point-num{font-family:'Bebas Neue';font-size:28px;color:var(--red)}.why-point h3{font-family:'Bebas Neue';font-size:26px;margin:0 0 5px}.why-point p,.about-body{font-size:15px;line-height:1.65;color:var(--muted);margin:0}.why-visual{background:var(--green2);color:#fff;padding:46px;border-radius:var(--radius);min-height:400px;display:flex;flex-direction:column;justify-content:space-between}.why-tagline{font-family:'Bebas Neue';font-size:70px;line-height:.84}.why-tagline .gold{color:var(--gold)}.why-sub{font-size:15px;line-height:1.5;color:#d7e1d8}.regions{display:flex;gap:7px;flex-wrap:wrap}.region-pill{border:1px solid rgba(255,255,255,.25);padding:8px 11px;border-radius:999px;font-size:10px;text-transform:uppercase;letter-spacing:.1em}.about{background:var(--paper)}.about-body{max-width:610px;margin-bottom:18px}.about-mission{border-left:4px solid var(--gold);padding:8px 0 8px 20px;margin:30px 0;font-family:'Barlow Condensed';font-size:22px;line-height:1.3}.about-stats{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line)}.about-stat{background:var(--paper);padding:28px 20px}.about-stat-num{font-family:'Bebas Neue';font-size:48px;color:var(--green)}.about-stat-num em{font-style:normal;color:var(--red);font-size:24px}.about-stat-label{font-size:10px;text-transform:uppercase;letter-spacing:.12em;color:var(--muted)}.journal{background:var(--green2);color:#fff}.journal .section-eyebrow{color:var(--gold)}.journal-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}.journal-card{padding:30px;border:1px solid rgba(255,255,255,.18);border-radius:var(--radius);background:rgba(255,255,255,.06)}.journal-card.featured-post{background:var(--gold);color:var(--ink);grid-row:span 2}.journal-kicker{font-size:10px;font-weight:900;letter-spacing:.16em;text-transform:uppercase;color:var(--red)}.journal h3{font-family:'Bebas Neue';font-size:42px;line-height:.95;margin:14px 0}.journal p{font-size:14px;line-height:1.65;color:#d5e2d8}.featured-post p{color:var(--ink)}.journal-quote{font-family:'Barlow Condensed';font-size:25px!important;color:var(--ink)!important;margin-top:36px}.cta-banner{background:var(--red);color:#fff;text-align:center}.cta-inner{max-width:720px;margin:auto;padding:100px 28px}.cta-title{font-family:'Bebas Neue';font-size:clamp(60px,8vw,100px);line-height:.9;margin:0 0 16px}.cta-sub{font-size:16px;line-height:1.55;color:#ffe6e8;margin:0 auto 28px}.cta-note{font-size:10px;letter-spacing:.14em;text-transform:uppercase;margin-top:18px;color:#ffd0d4}footer{background:var(--ink);color:#fff}.footer-inner{max-width:1240px;margin:auto;padding:70px 28px;display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:50px}.footer-brand .logo{font-family:'Bebas Neue';font-size:38px}.footer-brand .logo span{color:var(--gold)}.footer-brand p,.footer-col li{font-size:13px;line-height:1.6;color:#aab7af}.footer-brand p{max-width:360px}.footer-wa{display:inline-flex;align-items:center;gap:8px;margin-top:10px;color:var(--gold);text-decoration:none;font-weight:800}.footer-col h4{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold)}.footer-col ul{list-style:none;padding:0;margin:15px 0}.footer-col li{margin:8px 0}.footer-bottom{max-width:1240px;margin:auto;padding:18px 28px;display:flex;justify-content:space-between;border-top:1px solid rgba(255,255,255,.12);font-size:11px;color:#87958d}.float-wa{position:fixed;z-index:90;right:24px;bottom:24px;background:var(--wa);color:#fff;width:54px;height:54px;border-radius:50%;display:grid;place-items:center;box-shadow:0 10px 24px rgba(37,211,102,.35)}.float-wa svg{width:25px;fill:#fff}#adminBtn{position:fixed;z-index:91;left:18px;bottom:18px;border:0;background:var(--ink);color:#fff;border-radius:50%;width:40px;height:40px;cursor:pointer}#adminOverlay{display:none;position:fixed;inset:0;z-index:200;background:rgba(0,0,0,.7);padding:5vh 16px;overflow:auto}#adminOverlay.open{display:block}.admin-panel{max-width:900px;margin:auto;background:var(--paper);color:var(--ink);border-radius:18px;padding:24px}.admin-header,.admin-footer-bar{display:flex;align-items:center;justify-content:space-between}.admin-close{border:0;background:none;font-size:20px;cursor:pointer}.admin-login{text-align:center;padding:50px 20px}.admin-input,.admin-search,.admin-img-input{width:100%;padding:12px;border:1px solid var(--line);border-radius:9px;background:#fff}.admin-login .admin-input{max-width:360px}.admin-btn,.admin-save-all,.admin-apply-btn,.admin-clear-btn,.admin-logout{border:0;border-radius:999px;padding:10px 15px;cursor:pointer;font-weight:800}.admin-btn,.admin-save-all,.admin-apply-btn{background:var(--green);color:#fff}.admin-body{display:none}.admin-body.visible{display:block}.admin-product-item{display:grid;grid-template-columns:110px 1fr;gap:15px;padding:16px 0;border-bottom:1px solid var(--line)}.admin-thumb,.admin-thumb-placeholder{width:110px;height:90px;border-radius:10px;object-fit:cover;background:var(--cream);display:grid;place-items:center;text-align:center;color:var(--muted);font-size:11px}.admin-img-row{display:flex;gap:8px;margin:10px 0}.admin-hint,.admin-cat,.login-error{font-size:11px;color:var(--muted)}.admin-success{display:none;color:var(--green);font-weight:800}.admin-clear-btn{background:#eee}.admin-footer-bar{padding-top:18px}.admin-logout{background:var(--red);color:#fff}
-@media(max-width:850px){.nav-links{display:none}.nav-wa{display:none}.hamburger{display:flex}.mobile-menu{position:fixed;top:79px;left:0;right:0;background:var(--paper);z-index:99;border-bottom:1px solid var(--line);flex-direction:column}.mobile-menu.open{display:flex}.mobile-menu a{padding:18px 24px;border-bottom:1px solid var(--line)}.mobile-menu .mob-wa{background:var(--green);color:#fff;text-align:center;margin:14px;border-radius:999px}.products-grid{grid-template-columns:1fr 1fr}.product-card.featured{grid-column:span 2}.why-grid,.about-inner,.journal-grid{grid-template-columns:1fr;gap:35px}.journal-card.featured-post{grid-row:auto}.footer-inner{grid-template-columns:1fr 1fr}}
-@media(max-width:560px){.nav-inner{padding:0 18px}.section-inner{padding:75px 18px}.hero{padding-left:18px;padding-right:18px;min-height:700px}.hero-stats{gap:18px;flex-wrap:wrap;margin-top:48px}.hero-stat{min-width:120px}.products-grid{grid-template-columns:1fr}.product-card.featured{grid-column:span 1}.why-visual{padding:30px}.why-tagline{font-size:56px}.footer-inner{grid-template-columns:1fr}.admin-product-item{grid-template-columns:1fr}.admin-thumb,.admin-thumb-placeholder{width:100%;height:160px}.admin-img-row{flex-wrap:wrap}}
-</style></head><body><a class="float-wa" href="https://wa.me/233240983421" target="_blank" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.198.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a><button id="adminBtn" title="Admin Panel">⚙</button>
-<div id="adminOverlay"><div class="admin-panel"><div class="admin-header"><h2>Ruuzgym catalog manager</h2><button class="admin-close" id="adminClose">✕</button></div><div class="admin-login" id="adminLogin"><h3>Update product images</h3><p>Paste a hosted image URL to keep the catalog fresh.</p><input class="admin-input" type="password" id="adminPass" placeholder="Admin password"/><br><button class="admin-btn" id="adminLoginBtn">Login</button><p class="login-error" id="loginError">Wrong password. Try again.</p></div><div class="admin-body" id="adminBody"><input class="admin-search" type="text" id="adminSearch" placeholder="Search products..."/><div style="display:flex;align-items:center;justify-content:space-between;margin:16px 0;gap:12px;flex-wrap:wrap"><p class="admin-hint">Update the catalog in <strong>products.js</strong> for permanent edits, or apply an image here for this browser.</p><button class="admin-save-all" id="saveAllBtn">✓ Save All Changes</button></div><div id="adminProductList"></div><div class="admin-footer-bar"><span class="admin-count" id="adminCount"></span><button class="admin-logout" id="adminLogout">Logout</button></div></div></div></div>
-<nav><div class="gh-stripe"><span class="r"></span><span class="g"></span><span class="gr"></span></div><div class="nav-inner"><a href="#" class="nav-logo"><img src="https://res.cloudinary.com/ddgs5x2qd/image/upload/v1774172173/Screenshot_2026-01-17_090243_dv8ggm.png" alt="Ruuzgym"/></a><ul class="nav-links"><li><a href="#products">Shop</a></li><li><a href="#why">Why us</a></li><li><a href="#journal">Journal</a></li><li><a href="#contact">Contact</a></li></ul><a href="https://wa.me/233240983421" target="_blank" class="nav-wa">WhatsApp us</a><div class="hamburger" id="hamburger"><span></span><span></span><span></span></div></div></nav><div class="mobile-menu" id="mobileMenu"><a href="#products">Shop products</a><a href="#why">Why Ruuzgym</a><a href="#journal">Daily motivation</a><a href="#contact">Contact</a><a href="https://wa.me/233240983421" target="_blank" class="mob-wa">WhatsApp: 0240983421</a></div>
-<section class="hero"><div class="hero-top-stripe"><div class="gh-stripe"><span class="r"></span><span class="g"></span><span class="gr"></span></div></div><div class="hero-grid"></div><div class="hero-content"><p class="hero-eyebrow">Serious equipment. Ghanaian hustle.</p><h1 class="hero-title">BUILD<br><span class="gold">YOUR GYM.</span></h1><p class="hero-tagline">Commercial quality. <strong>Local price.</strong></p><div class="hero-ctas"><a href="https://wa.me/233240983421" target="_blank" class="btn-wa">WhatsApp to order</a><a href="#products" class="btn-outline">Explore equipment</a></div><div class="hero-stats"><div class="hero-stat"><div class="hero-stat-num">20<span>+</span></div><div class="hero-stat-label">Ways to train</div></div><div class="hero-stat"><div class="hero-stat-num"><span style="font-size:28px">Ghana-wide</span></div><div class="hero-stat-label">Delivery</div></div><div class="hero-stat"><div class="hero-stat-num">800<span>lb</span></div><div class="hero-stat-label">Bench rated</div></div><div class="hero-stat"><div class="hero-stat-num"><span style="font-size:28px">Real</span></div><div class="hero-stat-label">Support</div></div></div></div><div class="hero-scroll"><span>Scroll to shop</span><div class="scroll-bar"></div></div></section>
-<section class="products" id="products"><div class="section-inner"><p class="section-eyebrow">Choose your starting point</p><h2 class="section-title">Equipment that<br>earns its space.</h2><div class="cat-tabs"><button class="cat-tab active" data-cat="all">All equipment</button><button class="cat-tab" data-cat="benches">Benches & racks</button><button class="cat-tab" data-cat="machines">Machines</button><button class="cat-tab" data-cat="weights">Free weights</button><button class="cat-tab" data-cat="cardio">Cardio</button><button class="cat-tab" data-cat="accessories">Accessories</button><button class="cat-tab" data-cat="services">Services</button></div><div class="products-grid" id="productsGrid"></div></div></section>
-<section class="why" id="why"><div class="section-inner"><div class="why-grid"><div><p class="section-eyebrow">The Ruuzgym difference</p><h2 class="section-title">Train today.<br>Grow tomorrow.</h2><div class="why-points"><div class="why-point"><div class="why-point-num">01</div><div><h3>Built for Ghanaian gyms</h3><p>From busy commercial floors in Accra to home setups in Kumasi, choose equipment that can handle real daily use.</p></div></div><div class="why-point"><div class="why-point-num">02</div><div><h3>Invest once, use for years</h3><p>Good equipment makes every workout safer, stronger and more consistent — no matter your starting point.</p></div></div><div class="why-point"><div class="why-point-num">03</div><div><h3>Delivery that reaches you</h3><p>We coordinate delivery across Accra, Kumasi, Takoradi, Tamale and beyond.</p></div></div><div class="why-point"><div class="why-point-num">04</div><div><h3>Real people on WhatsApp</h3><p>Send a photo, ask for a package or tell us your budget. We help you build a setup that makes sense.</p></div></div></div></div><div class="why-visual"><div class="why-tagline">Your health<br>is your real<br><span class="gold">wealth.</span></div><p class="why-sub">A stronger body gives you more energy for work, family, business and the life you are building.</p><div class="regions"><span class="region-pill">Accra</span><span class="region-pill">Kumasi</span><span class="region-pill">Takoradi</span><span class="region-pill">Tamale</span><span class="region-pill">All Ghana</span></div></div></div></div></section>
-<section class="about" id="about"><div class="section-inner"><div class="about-inner"><div><p class="section-eyebrow">Made for the everyday athlete</p><h2 class="section-title">A healthier Ghana<br>starts at home.</h2><p class="about-body">You do not need to wait for the perfect time, a fancy club or a long commute. With the right equipment, your compound, room, office or community space can become a place to build strength.</p><p class="about-body">Ruuzgym makes serious equipment easier to access, easier to understand and easier to order — with nationwide delivery and support on WhatsApp.</p><div class="about-mission">“Small sessions become strong habits. Strong habits build strong homes, strong businesses and a stronger Ghana.”</div><a href="https://wa.me/233240983421?text=Hi%20Ruuzgym%2C%20help%20me%20choose%20equipment" target="_blank" class="btn-wa" style="display:inline-flex">Help me choose</a></div><div class="about-stats"><div class="about-stat"><div class="about-stat-num">20<em>+</em></div><div class="about-stat-label">Catalog choices</div></div><div class="about-stat"><div class="about-stat-num" style="font-size:37px;padding-top:8px">Ghana</div><div class="about-stat-label">Nationwide reach</div></div><div class="about-stat"><div class="about-stat-num">800<em>lb</em></div><div class="about-stat-label">Bench rating</div></div><div class="about-stat"><div class="about-stat-num" style="font-size:37px;padding-top:8px">Direct</div><div class="about-stat-label">WhatsApp support</div></div></div></div></div></section>
-<section class="journal" id="journal"><div class="section-inner"><p class="section-eyebrow">Ruuzgym daily journal</p><h2 class="section-title">A reason to move<br>every single day.</h2><div class="journal-grid"><article class="journal-card featured-post"><div class="journal-kicker">First post · 08 September 2026</div><h3>Start with what you have. Build with what you need.</h3><p>Maybe you are opening a gym in Accra, upgrading a studio in Kumasi, or creating a small workout corner at home. You do not need everything on day one. Start with one solid bench, a pair of weights and a commitment to show up.</p><p>Every rep is an investment in your energy, confidence and long-term health. The goal is not perfection — it is consistency. When the equipment is close, sturdy and ready, excuses have less room to grow.</p><p class="journal-quote">“Your future body is built by the choices you make today.”</p></article><article class="journal-card"><div class="journal-kicker">Today’s reminder</div><h3>Move for the life you want.</h3><p>Train so you can carry your responsibilities with more energy, play with your children, serve your customers and enjoy your day with confidence.</p></article><article class="journal-card"><div class="journal-kicker">Why buy quality?</div><h3>Because your habit deserves support.</h3><p>Reliable equipment feels safer, lasts longer and makes it easier to return tomorrow. Buy once with purpose, then keep showing up.</p></article></div></div></section>
-<section class="cta-banner" id="contact"><div class="cta-inner"><h2 class="cta-title">Ready to move?</h2><p class="cta-sub">Tell us your goal, your location and your budget. We will help you choose the right equipment and arrange delivery anywhere in Ghana.</p><a href="https://wa.me/233240983421?text=Hi%20Ruuzgym%2C%20I%27m%20ready%20to%20build%20my%20gym" target="_blank" class="cta-wa-btn">WhatsApp: 0240983421</a><p class="cta-note">Fast replies · Delivery across Ghana · Personal and commercial setups</p></div></section>
-<footer><div class="footer-inner"><div class="footer-brand"><div class="logo">RUUZ<span>GYM</span></div><p>Your complete gym equipment store. Commercial and personal equipment delivered across Ghana. Too affordable for such quality.</p><a href="https://wa.me/233240983421" target="_blank" class="footer-wa">WhatsApp 0240983421</a></div><div class="footer-col"><h4>Shop</h4><ul id="footerProductList"></ul></div><div class="footer-col"><h4>We deliver to</h4><ul><li>Accra</li><li>Kumasi</li><li>Takoradi</li><li>Tamale</li><li>All regions of Ghana</li></ul></div></div><div class="footer-bottom"><p>© 2026 Ruuzgym Ghana. All rights reserved.</p><span>Made for Ghana 🇬🇭</span></div><div class="gh-stripe"><span class="r"></span><span class="g"></span><span class="gr"></span></div></footer><script>
-const WA_SVG = `<svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:#fff" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>`;
-// ── RENDER PRODUCTS ─────────────────────────────────
-function renderProducts(filterCat){
-  const grid = document.getElementById('productsGrid');
-  grid.innerHTML = '';
-  const cat = filterCat || 'all';
-  PRODUCTS.forEach(p => {
-    const show = cat === 'all' || p.cat === cat || p.cat === 'all';
-    if(!show) return;
-    const isFeatured = p.featured;
-    const isGreen    = p.special === 'green';
-    const imgHTML = p.image
-      ? `<div class="product-img-wrap"><img src="${p.image}" alt="${p.name}" loading="lazy" onerror="this.parentElement.innerHTML='<div class=product-img-placeholder>No image yet</div>'"></div>`
-      : `<div class="product-img-wrap"><div class="product-img-placeholder">📷 Image coming soon<br><span style="font-size:10px;opacity:.5">Upload via Admin Panel</span></div></div>`;
-    const featuresHTML = p.features.map(f=>`<li>${f}</li>`).join('');
-    const badgeHTML    = p.badge ? `<span class="product-badge">${p.badge}</span>` : '';
-    const card = document.createElement('div');
-    card.className = `product-card${isFeatured?' featured':''}${isGreen?' green-card':''}`;
-    card.dataset.cat = p.cat;
-    card.innerHTML = `
-      <div class="product-num">${p.num}</div>
-      ${badgeHTML}
-      ${imgHTML}
-      <p class="product-tag">${p.tag}</p>
-      <h3 class="product-name">${p.name}</h3>
-      <p class="product-desc">${p.desc}</p>
-      <ul class="product-features">${featuresHTML}</ul>
-      <a href="https://wa.me/233240983421?text=Hi%20Ruuzgym%2C%20I'm%20interested%20in%20${p.wa}" target="_blank" class="product-cta">Enquire on WhatsApp →</a>
-    `;
-    grid.appendChild(card);
-  });
-  // Animate in
-  grid.querySelectorAll('.product-card').forEach((c,i)=>{
-    c.style.opacity='0'; c.style.transform='translateY(20px)';
-    c.style.transition='opacity .5s ease,transform .5s ease,background .3s';
-    setTimeout(()=>{c.style.opacity='1';c.style.transform='none';},i*55);
-  });
+// RUUZGYM PRODUCT CATALOG
+// Update product names, descriptions, features, WhatsApp text, and image URLs here.
+// The on-page Admin Panel can also update image URLs and saves them to this browser.
+
+
+// ═══════════════════════════════════════════════════
+// RUUZGYM PRODUCT DATA — EDIT HERE OR VIA ADMIN PANEL
+// ═══════════════════════════════════════════════════
+const DEFAULT_PRODUCTS = [
+  {
+    id: 1, num:"01", cat:"benches", featured:true, badge:"Best Seller",
+    tag:"Commercial Bench Press",
+    name:"Iron Throne",
+    desc:"800 lb rated. 11-gauge steel. Lifetime frame warranty. The centrepiece of every serious gym in Ghana.",
+    features:["800 lb / 363 kg load capacity","11-gauge commercial steel frame","10 integrated plate storage posts","6 adjustable bar catch positions","Lifetime structural warranty"],
+    image:"https://res.cloudinary.com/ddgs5x2qd/image/upload/v1774021567/commercial_flat_bench_4_i196vg.png",
+    wa:"Iron%20Throne%20Bench%20Press"
+  },
+  {
+    id:2, num:"02", cat:"benches",
+    tag:"Benches & Racks", name:"Power Rack / Power Cage",
+    desc:"Full safety cage for heavy squats, bench and deadlifts. Built for maximum load, maximum safety.",
+    features:["Heavy-gauge steel cage","Adjustable safety spotter arms","Pull-up bar included","Commercial & home builds"],
+    image:"https://res.cloudinary.com/ddgs5x2qd/image/upload/v1774021568/power_cage_nmgum7.png", wa:"Power%20Rack"
+  },
+  {
+    id:3, num:"03", cat:"benches",
+    tag:"Benches & Racks", name:"Squat Rack / Half Rack",
+    desc:"Compact open-front rack. Squats, overhead press, bench — no cage needed. Space-efficient for any gym.",
+    features:["Adjustable bar catches","Spotter arms on both sides","Plate storage pegs","Commercial & personal builds"],
+    image:"https://i.pinimg.com/736x/88/a2/6f/88a26fcc4d0557a2824872bf78034905.jpg", wa:"Squat%20Rack"
+  },
+  {
+    id:4, num:"04", cat:"benches",
+    tag:"Benches & Racks", name:"Weight Bench",
+    desc:"Flat, incline and decline positions. Thick pad, solid base. For pressing, rowing, dumbbell work and more.",
+    features:["Flat / incline / decline","Commercial-grade padding","Foldable options available"],
+    image:"https://res.cloudinary.com/ddgs5x2qd/image/upload/v1774021568/saw_teeth_flat_adjustable_bench_i1bmxc.png", wa:"Weight%20Bench"
+  },
+  {
+    id:5, num:"05", cat:"machines",
+    tag:"Machines", name:"Smith Machine",
+    desc:"Squat. Bench. Row. Press. One rack, full body. Precision-guided rails for safe heavy training.",
+    features:["Commercial & personal builds","Precision-guided rails","Full-body training coverage"],
+    image:"https://i.pinimg.com/1200x/e3/c8/e0/e3c8e04d41e118c7b8af68d553157b78.jpg", wa:"Smith%20Machine"
+  },
+  {
+    id:6, num:"06", cat:"machines",
+    tag:"Machines", name:"Cable Crossover Machine",
+    desc:"Dual cable columns, full range of motion. Chest flyes, cable rows, tricep pushdowns — one machine, endless exercises.",
+    features:["Dual adjustable cable columns","Multiple attachment points","Commercial grade pulleys","Full upper-body coverage"],
+    image:"https://i.pinimg.com/1200x/ca/01/15/ca0115570baa93aaac6e16acfa8527c6.jpg", wa:"Cable%20Crossover%20Machine"
+  },
+  {
+    id:7, num:"07", cat:"machines",
+    tag:"Machines", name:"Leg Press Machine",
+    desc:"Heavy-duty plate-loaded leg press. Build serious leg strength without spinal compression. A gym floor essential.",
+    features:["Plate-loaded, commercial build","Adjustable backrest & footplate","Safety lock system"],
+    image:"https://i.pinimg.com/1200x/a4/df/e7/a4dfe7930a4a9a90de814f63ccbb5d20.jpg", wa:"Leg%20Press%20Machine"
+  },
+  {
+    id:8, num:"08", cat:"machines",
+    tag:"Machines", name:"Lat Pulldown Machine",
+    desc:"Build wide, strong lats. Smooth pulleys, multiple grip options. One of the most-used machines in every gym.",
+    features:["Adjustable seat & knee pad","Multiple bar attachments","Low row cable included"],
+    image:"https://new.ksd-images.lt/display?path=aikido%2Fstore%2F2170e04f511a6c1799cd6c93a40b54f1.jpeg&op=resize&w=768&q=69", wa:"Lat%20Pulldown%20Machine"
+  },
+  {
+    id:9, num:"09", cat:"weights",
+    tag:"Free Weights", name:"Rubber Hex Dumbbells",
+    desc:"Every weight. Rubber-coated hex heads. Commercial grip. Built to survive daily drops and hard use.",
+    features:["Full weight range available","Rubber-coated hex design","Individual or full sets","Dumbbell rack available"],
+    image:"https://i.pinimg.com/736x/12/22/32/122232529689c76392dfa610ab894130.jpg", wa:"Rubber%20Hex%20Dumbbells"
+  },
+  {
+    id:10, num:"10", cat:"weights",
+    tag:"Free Weights", name:"Yoga / Studio Dumbbells",
+    desc:"Neoprene-coated light dumbbells for yoga, aerobics, pilates and studio classes. Colour-coded by weight.",
+    features:["Neoprene coated","Light weight range","Colour-coded by weight"],
+    image:"https://i.pinimg.com/736x/81/19/fd/8119fd88f13dda7ee6a21cd468db3192.jpg", wa:"Yoga%20Studio%20Dumbbells"
+  },
+  {
+    id:11, num:"11", cat:"weights",
+    tag:"Free Weights", name:"Olympic Weight Plates",
+    desc:"Rubber-coated or cast iron. Standard 2-inch Olympic hole. Available in all sizes — pairs or full sets.",
+    features:["Rubber coated & cast iron options","Standard Olympic 2\" hole","All sizes available","Pairs or full sets"],
+    image:"https://i.pinimg.com/1200x/e6/bc/d6/e6bcd6ce92f656446684188d6c8491f4.jpg", wa:"Olympic%20Weight%20Plates"
+  },
+  {
+    id:12, num:"12", cat:"weights",
+    tag:"Free Weights", name:"Olympic Barbells",
+    desc:"7ft Olympic bar and EZ Curl Bar. Knurled grip, rotating sleeves. The backbone of any free weight setup.",
+    features:["7ft standard Olympic bar","EZ Curl Bar available","Knurled grip, rotating sleeves","High load rating"],
+    image:"https://i.pinimg.com/736x/5a/84/78/5a84787d075519be6f0887df4dba4d1c.jpg", wa:"Olympic%20Barbells"
+  },
+  {
+    id:13, num:"13", cat:"cardio",
+    tag:"Cardio", name:"Treadmill",
+    desc:"Heavy-duty commercial motors or compact home units. Variable speed, multiple programmes. Built to last.",
+    features:["Commercial & personal builds","Variable speed & programmes","Heavy-duty motor","Foldable options available"],
+    image:"https://i.pinimg.com/1200x/a6/3a/6b/a63a6b8724d24b84d1fb3c19e2dba2a3.jpg", wa:"Treadmill"
+  },
+  {
+    id:14, num:"14", cat:"accessories",
+    tag:"Gym Setup", name:"Gym Rubber Flooring",
+    desc:"Interlocking rubber tiles and roll-out matting. Protects your floor, reduces noise, prevents equipment damage.",
+    features:["Interlocking rubber tiles","Roll-out mat options","High density, heavy-duty","Custom sizes available"],
+    image:"https://i.pinimg.com/736x/49/28/df/4928dfb4460428cbfd64662b07744134.jpg", wa:"Gym%20Rubber%20Flooring"
+  },
+  {
+    id:15, num:"15", cat:"accessories",
+    tag:"Accessories", name:"Resistance Bands",
+    desc:"Full set, every resistance level. Warm-ups, workouts, rehab, mobility. Light to carry, serious results.",
+    features:["All resistance levels","Durable latex material","Home & gym compatible"],
+    image:"https://i.pinimg.com/1200x/5d/6b/63/5d6b63b6966eb93158d954d67d86028f.jpg", wa:"Resistance%20Bands"
+  },
+  {
+    id:16, num:"16", cat:"accessories",
+    tag:"Accessories", name:"ladies gym fit",
+    desc:"Full set, every resistance level. Warm-ups, workouts, rehab, mobility.  serious results.",
+    features:["Moisture-Wicking: Fabric that pulls sweat away to keep you dry.","Durable material","Four-Way Stretch: High elastane content for full range of motion."],
+    image:"https://i.pinimg.com/1200x/22/a4/71/22a471e5e44e3d6015964cc3e3108eb3.jpg", wa:"Ladies%20gym%20fit"
+  },
+  {
+    id:17, num:"17", cat:"accessories",
+    tag:"Accessories", name:"Yoga Mat & Exercise Ball",
+    desc:"Premium non-slip mat and anti-burst exercise ball. Stretching, core work, stability and recovery.",
+    features:["Premium non-slip mat","Anti-burst exercise ball","Core, stretch & recovery"],
+    image:"https://i.pinimg.com/1200x/93/3f/74/933f7498b0b66f21bdc3a50491b55aa2.jpg", wa:"Yoga%20Mat%20and%20Exercise%20Ball"
+  },
+ {
+    id:18, num:"18", cat:"services",
+    tag:"Other Services", name:"Repairs & Assembly",
+    desc:"We fix, service and assemble all types of gym equipment. From treadmill motors to cable systems — we keep your gym running.",
+    features:["Treadmill repairs & servicing","Cable system & pulley repairs","Full equipment assembly","All brands & machine types"],
+    image:"https://i.pinimg.com/1200x/40/7a/6c/407a6c47abc25c375d15bf6864417fd8.jpg", wa:"Equipment%20Repairs%20and%20Assembly"
+  },
+  {
+    id:19, num:"19", cat:"all",
+    tag:"Commercial & Personal", name:"Full Gym Packages",
+    desc:"Setting up from scratch? We supply, deliver and install everything. Hotels, schools, corporates, home gyms.",
+    features:["Complete setup — one supplier","Commercial & home builds","Delivery & installation","Hotels, schools & corporates"],
+    image:"https://i.pinimg.com/1200x/b5/ee/56/b5ee56a486455cf6c26cc2a9a8db7fc8.jpg", wa:"Full%20Gym%20Package",
+    special:"green"
+  },
+  {
+
+    id:20, num:"20", cat:"all",
+    tag:"Can't Find It?", name:"We'll Source It For You",
+    desc:"See a piece of equipment you want but can't find it here? Send us a photo on WhatsApp and we'll source it for you.",
+    features:["Send us any equipment photo","We'll find & price it for you","All brands & types welcome","Fast response guaranteed"],
+    image:"https://res.cloudinary.com/ddgs5x2qd/image/upload/v1774207843/zzzaa_anuwdx.png", wa:"I%20have%20a%20equipment%20photo%20I%20need%20you%20to%20source%20for%20me%20-%20let%20me%20send%20you%20the%20image",
+    special:"green"
+
 }
-// ── RENDER FOOTER PRODUCT LIST ───────────────────────
-function renderFooter(){
-  const ul = document.getElementById('footerProductList');
-  ul.innerHTML = PRODUCTS.map(p=>`<li>${p.name}</li>`).join('');
+];
+
+const ADMIN_PASSWORD = "$$Mrzaidruuzgym1999$$";
+const STORAGE_KEY     = "ruuzgym_products";
+const VERSION_KEY     = "ruuzgym_version";
+const CURRENT_VERSION = "v6";
+
+function loadProducts(){
+  try {
+    const savedVersion = localStorage.getItem(VERSION_KEY);
+    if(savedVersion !== CURRENT_VERSION){
+  localStorage.setItem(VERSION_KEY, CURRENT_VERSION);
+  // Don't wipe — just fall through and merge below
 }
-// ── CATEGORY TABS ───────────────────────────────────
-let currentCat = 'all';
-document.querySelectorAll('.cat-tab').forEach(tab=>{
-  tab.addEventListener('click',()=>{
-    document.querySelectorAll('.cat-tab').forEach(t=>t.classList.remove('active'));
-    tab.classList.add('active');
-    currentCat = tab.dataset.cat;
-    renderProducts(currentCat);
-  });
-});
-// ── HAMBURGER ───────────────────────────────────────
-const ham = document.getElementById('hamburger');
-const mob = document.getElementById('mobileMenu');
-ham.addEventListener('click',()=>mob.classList.toggle('open'));
-mob.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>mob.classList.remove('open')));
-// ── WHY POINTS ANIMATION ────────────────────────────
-const wpIO = new IntersectionObserver(entries=>{
-  entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')});
-},{threshold:0.15});
-document.querySelectorAll('.why-point').forEach((el,i)=>{
-  el.style.transitionDelay=i*0.1+'s'; wpIO.observe(el);
-});
-// ══════════════════════════════════════════════════════
-// ADMIN PANEL LOGIC
-// ══════════════════════════════════════════════════════
-let adminLoggedIn = false;
-const adminOverlay  = document.getElementById('adminOverlay');
-const adminLogin    = document.getElementById('adminLogin');
-const adminBody     = document.getElementById('adminBody');
-const adminPass     = document.getElementById('adminPass');
-const loginError    = document.getElementById('loginError');
-const adminSearch   = document.getElementById('adminSearch');
-const adminCount    = document.getElementById('adminCount');
-document.getElementById('adminBtn').addEventListener('click',()=>{
-  adminOverlay.classList.add('open');
-  if(adminLoggedIn) renderAdminList();
-});
-document.getElementById('adminClose').addEventListener('click',()=>{
-  adminOverlay.classList.remove('open');
-});
-adminOverlay.addEventListener('click', e=>{
-  if(e.target === adminOverlay) adminOverlay.classList.remove('open');
-});
-// LOGIN
-document.getElementById('adminLoginBtn').addEventListener('click', doLogin);
-adminPass.addEventListener('keydown', e=>{ if(e.key==='Enter') doLogin(); });
-function doLogin(){
-  if(adminPass.value === ADMIN_PASSWORD){
-    adminLoggedIn = true;
-    adminLogin.style.display = 'none';
-    adminBody.classList.add('visible');
-    adminCount.textContent = PRODUCTS.length + ' products';
-    renderAdminList();
-  } else {
-    loginError.style.display = 'block';
-    adminPass.value = '';
-    adminPass.focus();
-  }
+    const saved = localStorage.getItem(STORAGE_KEY);
+    if(saved){
+      const parsed = JSON.parse(saved);
+      // Merge: keep defaults for any new products, update saved fields
+      return DEFAULT_PRODUCTS.map(def => {
+        const s = parsed.find(p => p.id === def.id);
+        return s ? {...def, ...s} : def;
+      });
+    }
+  } catch(e){}
+  return DEFAULT_PRODUCTS;
 }
-// LOGOUT
-document.getElementById('adminLogout').addEventListener('click',()=>{
-  adminLoggedIn = false;
-  adminLogin.style.display = 'block';
-  adminBody.classList.remove('visible');
-  adminPass.value = '';
-  loginError.style.display = 'none';
-  adminOverlay.classList.remove('open');
-});
-// SAVE ALL
-document.getElementById('saveAllBtn').addEventListener('click',()=>{
-  saveProducts(PRODUCTS);
-  renderProducts(currentCat);
-  renderFooter();
-  const btn = document.getElementById('saveAllBtn');
-  btn.textContent = '✓ Saved!';
-  btn.style.background = '#25D366';
-  setTimeout(()=>{ btn.textContent='✓ Save All Changes'; btn.style.background=''; },2000);
-});
-// SEARCH
-adminSearch.addEventListener('input',()=>{
-  const q = adminSearch.value.toLowerCase();
-  document.querySelectorAll('.admin-product-item').forEach(item=>{
-    const name = item.querySelector('h4').textContent.toLowerCase();
-    item.style.display = name.includes(q) ? '' : 'none';
-  });
-});
-// RENDER ADMIN LIST
-function renderAdminList(){
-  const list = document.getElementById('adminProductList');
-  list.innerHTML = '';
-  PRODUCTS.forEach(p=>{
-    const item = document.createElement('div');
-    item.className = 'admin-product-item';
-    item.dataset.id = p.id;
-    const thumbHTML = p.image
-      ? `<img class="admin-thumb" src="${p.image}" alt="${p.name}" onerror="this.style.display='none'">`
-      : `<div class="admin-thumb-placeholder"><span>📷</span><p>No image yet</p></div>`;
-    item.innerHTML = `
-      <div class="admin-thumb-wrap" id="thumb_${p.id}">${thumbHTML}</div>
-      <div class="admin-product-info">
-        <h4>${p.name}</h4>
-        <p class="admin-cat">${p.tag}</p>
-        <div class="admin-img-row">
-          <input class="admin-img-input" id="imgInput_${p.id}" type="text"
-            placeholder="Paste image URL from Cloudinary, Imgur, Google Drive..."
-            value="${p.image || ''}" />
-          <button class="admin-apply-btn" onclick="applyImage(${p.id})">Apply</button>
-          <button class="admin-clear-btn" onclick="clearImage(${p.id})">Clear</button>
-        </div>
-        <p class="admin-hint">
-          1. Upload photo to <strong>cloudinary.com</strong> or <strong>imgur.com</strong><br>
-          2. Copy the image URL<br>
-          3. Paste it above and click Apply
-        </p>
-        <p class="admin-success" id="success_${p.id}">✓ Image updated!</p>
-      </div>
-    `;
-    list.appendChild(item);
-  });
-  adminCount.textContent = PRODUCTS.length + ' products';
+
+function saveProducts(products){
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(products));
+  localStorage.setItem(VERSION_KEY, CURRENT_VERSION);
 }
-// APPLY IMAGE
-function applyImage(id){
-  const input = document.getElementById('imgInput_'+id);
-  const url   = input.value.trim();
-  if(!url){ alert('Please paste an image URL first'); return; }
-  const p = PRODUCTS.find(x=>x.id===id);
-  if(p){
-    p.image = url;
-    saveProducts(PRODUCTS);
-    // Update thumb preview
-    const thumb = document.getElementById('thumb_'+id);
-    thumb.innerHTML = `<img class="admin-thumb" src="${url}" alt="${p.name}" onerror="this.style.display='none'">`;
-    // Show success
-    const suc = document.getElementById('success_'+id);
-    suc.style.display='block';
-    setTimeout(()=>suc.style.display='none',3000);
-    // Re-render product grid
-    renderProducts(currentCat);
-  }
-}
-// CLEAR IMAGE
-function clearImage(id){
-  const p = PRODUCTS.find(x=>x.id===id);
-  if(p){
-    p.image = '';
-    saveProducts(PRODUCTS);
-    document.getElementById('imgInput_'+id).value='';
-    const thumb = document.getElementById('thumb_'+id);
-    thumb.innerHTML = `<div class="admin-thumb-placeholder"><span>📷</span><p>No image yet</p></div>`;
-    renderProducts(currentCat);
-  }
-}
-// ── INIT ────────────────────────────────────────────
-renderProducts('all');
-renderFooter();
-</script></body></html>
+
+let PRODUCTS = loadProducts();
