@@ -40,3 +40,27 @@ cat >> /home/ubuntu/ruuzgym/README.md <<'EOF'
 
 The storefront now has a Ghana-focused editorial design, a Ruuzgym Daily Journal section, stronger WhatsApp calls to action, responsive layouts, and a maintainable product catalog in `products.js`. See `IMAGE_AND_CONTENT_GUIDE.md` for the image and content workflow.
 EOF
+
+## Product detail pages
+
+Every catalogue card now links to its own detail view at `?product=ID`. The detail view includes the product gallery, full specifications, Ghana-wide delivery information, a WhatsApp enquiry link, and related products from the same equipment group.
+
+To add multiple product images, add an optional `images` array to that product in `products.js`. Keep the original `image` field as the primary preview image:
+
+```js
+{
+  id: 1,
+  image: "https://.../front-view.webp",
+  images: [
+    "https://.../front-view.webp",
+    "https://.../side-view.webp",
+    "https://.../detail-view.webp"
+  ],
+  features: [
+    "800 lb / 363 kg load capacity",
+    "11-gauge commercial steel frame"
+  ]
+}
+```
+
+The `features` array is displayed as **Key details**. Optional fields `bestFor`, `build`, and `specifications` can add richer product information. The `specifications` array is displayed in place of `features` when present. Use the existing `cat` values—`benches`, `machines`, `weights`, `cardio`, `accessories`, and `services`—to keep products grouped and to control related-product suggestions.
