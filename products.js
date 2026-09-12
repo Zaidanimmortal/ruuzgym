@@ -98,7 +98,13 @@ const DEFAULT_PRODUCTS = [
     tag:"Cardio · Treadmills", subcat:"treadmills", name:"Treadmill",
     desc:"Heavy-duty commercial motors or compact home units. Variable speed, multiple programmes. Built to last.",
     features:["Commercial & personal builds","Variable speed & programmes","Heavy-duty motor","Foldable options available"],
-    image:"https://i.pinimg.com/1200x/a6/3a/6b/a63a6b8724d24b84d1fb3c19e2dba2a3.jpg", wa:"Treadmill"
+    image:"https://res.cloudinary.com/ddgs5x2qd/image/upload/v1789250796/WhatsApp_Image_2026-09-13_at_00.55.51_yn4tf6.jpg",
+    images:[
+      "https://res.cloudinary.com/ddgs5x2qd/image/upload/v1789250796/WhatsApp_Image_2026-09-13_at_00.55.51_yn4tf6.jpg",
+      "https://res.cloudinary.com/ddgs5x2qd/image/upload/v1789250795/WhatsApp_Image_2026-09-13_at_00.55.51_1_djqnl5.jpg",
+      "https://res.cloudinary.com/ddgs5x2qd/image/upload/v1789250492/treadmill._xx_s8iowz.png",
+      "https://res.cloudinary.com/ddgs5x2qd/image/upload/v1789250531/treadxx_qgmp4w.png"
+    ], wa:"Treadmill"
   },
   {
     id:14, num:"14", cat:"accessories",
