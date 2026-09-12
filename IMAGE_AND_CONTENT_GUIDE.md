@@ -64,3 +64,7 @@ To add multiple product images, add an optional `images` array to that product i
 ```
 
 The `features` array is displayed as **Key details**. Optional fields `bestFor`, `build`, and `specifications` can add richer product information. The `specifications` array is displayed in place of `features` when present. Use the existing `cat` values—`benches`, `machines`, `weights`, `cardio`, `accessories`, and `services`—to keep products grouped and to control related-product suggestions.
+
+## Cardio equipment groups
+
+Cardio products use an optional `subcat` field. Use one of `treadmills`, `bikes`, `ellipticals`, `rowers`, or `steppers` so the product appears in the matching Cardio subgroup. For example: `subcat: "bikes"`. The Cardio menu includes All cardio, Treadmills, Exercise bikes, Ellipticals, Rowing machines, and Steppers & climbers.

@@ -95,7 +95,7 @@ const DEFAULT_PRODUCTS = [
   },
   {
     id:13, num:"13", cat:"cardio",
-    tag:"Cardio", name:"Treadmill",
+    tag:"Cardio · Treadmills", subcat:"treadmills", name:"Treadmill",
     desc:"Heavy-duty commercial motors or compact home units. Variable speed, multiple programmes. Built to last.",
     features:["Commercial & personal builds","Variable speed & programmes","Heavy-duty motor","Foldable options available"],
     image:"https://i.pinimg.com/1200x/a6/3a/6b/a63a6b8724d24b84d1fb3c19e2dba2a3.jpg", wa:"Treadmill"
