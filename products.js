@@ -35,7 +35,12 @@ const DEFAULT_PRODUCTS = [
     tag:"Benches & Racks", name:"Weight Bench",
     desc:"Flat, incline and decline positions. Thick pad, solid base. For pressing, rowing, dumbbell work and more.",
     features:["Flat / incline / decline","Commercial-grade padding","Foldable options available"],
-    image:"https://res.cloudinary.com/ddgs5x2qd/image/upload/v1774021568/saw_teeth_flat_adjustable_bench_i1bmxc.png", wa:"Weight%20Bench"
+    image:"https://res.cloudinary.com/ddgs5x2qd/image/upload/v1774021568/saw_teeth_flat_adjustable_bench_i1bmxc.png",
+    images:[
+      "https://res.cloudinary.com/ddgs5x2qd/image/upload/v1774021568/saw_teeth_flat_adjustable_bench_i1bmxc.png",
+      "https://res.cloudinary.com/ddgs5x2qd/image/upload/v1789329672/WhatsApp_Image_2026-09-13_at_00.55.52_kaonxa.jpg",
+      "https://res.cloudinary.com/ddgs5x2qd/image/upload/v1789329671/WhatsApp_Image_2026-09-13_at_00.55.52_1_ujznvm.jpg"
+    ], wa:"Weight%20Bench"
   },
   {
     id:5, num:"05", cat:"machines",
