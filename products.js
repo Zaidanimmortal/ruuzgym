@@ -103,7 +103,11 @@ const DEFAULT_PRODUCTS = [
       "https://res.cloudinary.com/ddgs5x2qd/image/upload/v1789250796/WhatsApp_Image_2026-09-13_at_00.55.51_yn4tf6.jpg",
       "https://res.cloudinary.com/ddgs5x2qd/image/upload/v1789250795/WhatsApp_Image_2026-09-13_at_00.55.51_1_djqnl5.jpg",
       "https://res.cloudinary.com/ddgs5x2qd/image/upload/v1789250492/treadmill._xx_s8iowz.png",
-      "https://res.cloudinary.com/ddgs5x2qd/image/upload/v1789250531/treadxx_qgmp4w.png"
+      "https://res.cloudinary.com/ddgs5x2qd/image/upload/v1789250531/treadxx_qgmp4w.png",
+      "https://res.cloudinary.com/ddgs5x2qd/image/upload/v1789328424/treadmill_xsx_lmzwkw.png",
+      "https://res.cloudinary.com/ddgs5x2qd/image/upload/v1789328424/treadmill_xx_uswqgt.png",
+      "https://res.cloudinary.com/ddgs5x2qd/image/upload/v1789328424/treadmill_ere_mwlqum.png",
+      "https://res.cloudinary.com/ddgs5x2qd/image/upload/v1789328424/treadmill_cxxd_pnsacx.png"
     ], wa:"Treadmill"
   },
   {
