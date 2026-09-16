@@ -68,3 +68,21 @@ The `features` array is displayed as **Key details**. Optional fields `bestFor`,
 ## Cardio equipment groups
 
 Cardio products use an optional `subcat` field. Use one of `treadmills`, `bikes`, `ellipticals`, `rowers`, or `steppers` so the product appears in the matching Cardio subgroup. For example: `subcat: "bikes"`. The Cardio menu includes All cardio, Treadmills, Exercise bikes, Ellipticals, Rowing machines, and Steppers & climbers.
+
+## Home and commercial catalogue structure
+
+Every product should now be assigned an `audience` value: `home`, `commercial`, or `both`. Use `home` for domestic equipment, `commercial` for equipment intended for busy professional floors, and `both` when the same product serves both audiences. The catalogue presents these as Home / Domestic, Commercial gym, and All equipment entry points before the existing equipment categories.
+
+Additional merchandising fields are recommended for every product:
+
+```js
+audience: ["both"],
+space: "medium", // small, medium, or large
+usage: "moderate", // light, moderate, or heavy
+```
+
+## Required questions for every future image upload
+
+Before adding any new product image, confirm: (1) the product name; (2) whether it belongs to Home / Domestic, Commercial, or Both; (3) the main equipment category and subgroup; (4) whether the image is a new product image or an additional gallery image; (5) the direct public image URL; (6) the short product description; (7) key specifications; (8) the best use; (9) the space requirement; (10) the usage level; and (11) the preferred WhatsApp enquiry wording.
+
+Useful optional details include the product code, price or whether customers should request a quotation, a badge such as New or Best Seller, delivery and installation availability, and related products. I will ask these questions whenever you provide a new image link so every upload is placed in the correct catalogue path.
