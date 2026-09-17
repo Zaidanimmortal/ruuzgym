@@ -8,7 +8,7 @@
 // ═══════════════════════════════════════════════════
 const DEFAULT_PRODUCTS = [
   {
-    id: 1, num:"01", cat:"benches", audience:["commercial"], space:"large", usage:"heavy", featured:true, badge:"Best Seller",
+    id: 1, num:"01", cat:"benches", audience:["commercial"], space:"large", usage:"heavy", subcat:"benches", featured:true, badge:"Best Seller",
     tag:"Commercial Bench Press",
     name:"Iron Throne",
     desc:"800 lb rated. 11-gauge steel. Lifetime frame warranty. The centrepiece of every serious gym in Ghana.",
@@ -17,21 +17,21 @@ const DEFAULT_PRODUCTS = [
     wa:"Iron%20Throne%20Bench%20Press"
   },
   {
-    id:2, num:"02", cat:"benches", audience:["both"], space:"medium", usage:"heavy",
+    id:2, num:"02", cat:"benches", audience:["both"], space:"medium", usage:"heavy", subcat:"racks",
     tag:"Benches & Racks", name:"Power Rack / Power Cage",
     desc:"Full safety cage for heavy squats, bench and deadlifts. Built for maximum load, maximum safety.",
     features:["Heavy-gauge steel cage","Adjustable safety spotter arms","Pull-up bar included","Commercial & home builds"],
     image:"https://res.cloudinary.com/ddgs5x2qd/image/upload/v1774021568/power_cage_nmgum7.png", wa:"Power%20Rack"
   },
   {
-    id:3, num:"03", cat:"benches", audience:["both"], space:"medium", usage:"heavy",
+    id:3, num:"03", cat:"benches", audience:["both"], space:"medium", usage:"heavy", subcat:"racks",
     tag:"Benches & Racks", name:"Squat Rack / Half Rack",
     desc:"Compact open-front rack. Squats, overhead press, bench — no cage needed. Space-efficient for any gym.",
     features:["Adjustable bar catches","Spotter arms on both sides","Plate storage pegs","Commercial & personal builds"],
     image:"https://i.pinimg.com/736x/88/a2/6f/88a26fcc4d0557a2824872bf78034905.jpg", wa:"Squat%20Rack"
   },
   {
-    id:4, num:"04", cat:"benches", audience:["both"], space:"small", usage:"moderate",
+    id:4, num:"04", cat:"benches", audience:["both"], space:"small", usage:"moderate", subcat:"benches",
     tag:"Benches & Racks", name:"Weight Bench",
     desc:"Flat, incline and decline positions. Thick pad, solid base. For pressing, rowing, dumbbell work and more.",
     features:["Flat / incline / decline","Commercial-grade padding","Foldable options available"],

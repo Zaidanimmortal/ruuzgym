@@ -86,3 +86,7 @@ usage: "moderate", // light, moderate, or heavy
 Before adding any new product image, confirm: (1) the product name; (2) whether it belongs to Home / Domestic, Commercial, or Both; (3) the main equipment category and subgroup; (4) whether the image is a new product image or an additional gallery image; (5) the direct public image URL; (6) the short product description; (7) key specifications; (8) the best use; (9) the space requirement; (10) the usage level; and (11) the preferred WhatsApp enquiry wording.
 
 Useful optional details include the product code, price or whether customers should request a quotation, a badge such as New or Best Seller, delivery and installation availability, and related products. I will ask these questions whenever you provide a new image link so every upload is placed in the correct catalogue path.
+
+## Benches and racks groups
+
+Products in the Benches & Racks category use `subcat: "benches"` or `subcat: "racks"`. The Benches subgroup currently leads with Iron Throne as the featured first product, followed by Weight Bench. The Racks subgroup contains Power Rack / Power Cage and Squat Rack / Half Rack.
