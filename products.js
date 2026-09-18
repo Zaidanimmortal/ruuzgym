@@ -178,6 +178,21 @@ const DEFAULT_PRODUCTS = [
     wa:"Multifunctional%20Smith%20Machine%20Power%20Rack"
   },
   {
+    id:22, num:"22", cat:"machines", audience:["home"], space:"small", usage:"moderate",
+    tag:"Home Gym · Multi-station", name:"Multifunctional Home Gym / All-in-One Gym Station",
+    desc:"An all-in-one strength-training machine designed to provide multiple resistance-training exercises in a single unit. It combines chest, shoulder, back, leg and cable exercises with a weight-stack system for full-body home workouts.",
+    features:["Multi-station strength-training system","Integrated weight-stack resistance system","Chest press and pec-deck / fly stations","Lat pulldown and low-row cable training","Leg extension / curl station","Adjustable workout seat and back support","Cable handles and pulley system","Multiple exercise positions","Heavy steel frame construction","Padded seat and back support"],
+    bestFor:"Home gyms and compact indoor training spaces",
+    build:"Heavy steel frame with padded seat and back support",
+    specifications:["Chest press and chest fly / pec-deck exercises","Lat pulldowns and seated rows","Shoulder, biceps and triceps exercises","Leg extensions and leg curls","General full-body strength training"],
+    image:"https://res.cloudinary.com/ddgs5x2qd/image/upload/v1789764915/WhatsApp_Image_2026-09-18_at_23.52.32_cpqko2.jpg",
+    images:[
+      "https://res.cloudinary.com/ddgs5x2qd/image/upload/v1789764915/WhatsApp_Image_2026-09-18_at_23.52.32_cpqko2.jpg",
+      "https://res.cloudinary.com/ddgs5x2qd/image/upload/v1789764914/WhatsApp_Image_2026-09-18_at_23.53.24_lfjbfd.jpg"
+    ],
+    wa:"Multifunctional%20Home%20Gym%20All-in-One%20Gym%20Station"
+  },
+  {
     id:20, num:"20", cat:"all", audience:["both"], space:"small", usage:"light",
     tag:"Can't Find It?", name:"We'll Source It For You",
     desc:"See a piece of equipment you want but can't find it here? Send us a photo on WhatsApp and we'll source it for you.",
