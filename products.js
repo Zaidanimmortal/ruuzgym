@@ -167,7 +167,10 @@ const DEFAULT_PRODUCTS = [
     build:"Heavy-duty steel construction for demanding strength training",
     specifications:["Squats, bench press and deadlifts","Smith machine and shoulder press exercises","Pull-ups, chin-ups and cable rows","Lat, biceps, triceps and functional cable training","Full-body workouts with free-weight and cable stations"],
     image:"https://res.cloudinary.com/ddgs5x2qd/image/upload/v1789762368/WhatsApp_Image_2026-09-13_at_00.55.52_2_armfz3.jpg",
-    images:["https://res.cloudinary.com/ddgs5x2qd/image/upload/v1789762368/WhatsApp_Image_2026-09-13_at_00.55.52_2_armfz3.jpg"],
+    images:[
+      "https://res.cloudinary.com/ddgs5x2qd/image/upload/v1789762368/WhatsApp_Image_2026-09-13_at_00.55.52_2_armfz3.jpg",
+      "https://res.cloudinary.com/ddgs5x2qd/image/upload/v1789763314/WhatsApp_Image_2026-09-13_at_00.55.52_3_cs5ine.jpg"
+    ],
     wa:"Multifunctional%20Smith%20Machine%20Power%20Rack"
   },
   {
