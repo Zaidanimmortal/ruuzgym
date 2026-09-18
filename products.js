@@ -65,14 +65,14 @@ const DEFAULT_PRODUCTS = [
   },
   {
     id:8, num:"08", cat:"machines", audience:["home"], space:"small", usage:"moderate",
-    tag:"Machines", name:"Lat Pulldown Machine",
+    tag:"Machines", name:"Single Station Home Indoor Machine",
     desc:"Build wide, strong lats. Smooth pulleys, multiple grip options. One of the most-used machines in every gym.",
     features:["Adjustable seat & knee pad","Multiple bar attachments","Low row cable included"],
     image:"https://res.cloudinary.com/ddgs5x2qd/image/upload/v1789764060/WhatsApp_Image_2026-09-13_at_00.55.52_4_dlq41w.jpg",
     images:[
       "https://res.cloudinary.com/ddgs5x2qd/image/upload/v1789764060/WhatsApp_Image_2026-09-13_at_00.55.52_4_dlq41w.jpg",
       "https://new.ksd-images.lt/display?path=aikido%2Fstore%2F2170e04f511a6c1799cd6c93a40b54f1.jpeg&op=resize&w=768&q=69"
-    ], wa:"Lat%20Pulldown%20Machine"
+    ], wa:"Single%20Station%20Home%20Indoor%20Machine"
   },
   {
     id:9, num:"09", cat:"weights", audience:["both"], space:"medium", usage:"heavy",
