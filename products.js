@@ -64,7 +64,7 @@ const DEFAULT_PRODUCTS = [
     image:"https://i.pinimg.com/1200x/a4/df/e7/a4dfe7930a4a9a90de814f63ccbb5d20.jpg", wa:"Leg%20Press%20Machine"
   },
   {
-    id:8, num:"08", cat:"machines", audience:["commercial"], space:"large", usage:"heavy",
+    id:8, num:"08", cat:"machines", audience:["home"], space:"large", usage:"moderate",
     tag:"Machines", name:"Lat Pulldown Machine",
     desc:"Build wide, strong lats. Smooth pulleys, multiple grip options. One of the most-used machines in every gym.",
     features:["Adjustable seat & knee pad","Multiple bar attachments","Low row cable included"],
