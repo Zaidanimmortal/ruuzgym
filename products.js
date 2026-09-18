@@ -159,7 +159,18 @@ const DEFAULT_PRODUCTS = [
     special:"green"
   },
   {
-
+    id:21, num:"21", cat:"machines", audience:["commercial"], space:"large", usage:"heavy",
+    tag:"Strength Equipment · Commercial", name:"Multifunctional Smith Machine Power Rack",
+    desc:"All-in-one strength station featuring a Smith machine, power rack, cable pulley system, adjustable bench, pull-up bar and weight-plate storage. Designed for comprehensive full-body strength training.",
+    features:["Integrated Smith machine guided bar system","Heavy-duty power rack / squat rack","Adjustable safety hooks and bar catches","Dual cable / pulley system with multiple attachment points","Olympic barbell support and integrated plate storage","Adjustable workout bench","Pull-up / chin-up bar","Multi-position squat and bench press stations","Heavy-duty steel construction","Black finish with contrasting yellow safety catches"],
+    bestFor:"Commercial gyms, hotels, fitness centres and serious home gyms",
+    build:"Heavy-duty steel construction for demanding strength training",
+    specifications:["Squats, bench press and deadlifts","Smith machine and shoulder press exercises","Pull-ups, chin-ups and cable rows","Lat, biceps, triceps and functional cable training","Full-body workouts with free-weight and cable stations"],
+    image:"https://res.cloudinary.com/ddgs5x2qd/image/upload/v1789762368/WhatsApp_Image_2026-09-13_at_00.55.52_2_armfz3.jpg",
+    images:["https://res.cloudinary.com/ddgs5x2qd/image/upload/v1789762368/WhatsApp_Image_2026-09-13_at_00.55.52_2_armfz3.jpg"],
+    wa:"Multifunctional%20Smith%20Machine%20Power%20Rack"
+  },
+  {
     id:20, num:"20", cat:"all", audience:["both"], space:"small", usage:"light",
     tag:"Can't Find It?", name:"We'll Source It For You",
     desc:"See a piece of equipment you want but can't find it here? Send us a photo on WhatsApp and we'll source it for you.",
