@@ -193,6 +193,18 @@ const DEFAULT_PRODUCTS = [
     special:"green"
   },
   {
+    id:23, num:"23", cat:"machines", audience:["both"], space:"large", usage:"heavy",
+    tag:"Multi-Station Strength Equipment", name:"Commercial Multifunctional Smith Machine & Functional Trainer",
+    desc:"Heavy-duty, all-in-one strength-training system combining dual Smith machines, power racks, functional cable trainers, adjustable benches and weight storage. Designed for comprehensive strength and functional training with multiple exercise stations.",
+    features:["Dual Smith machine / guided bar stations","Multiple power-rack positions","Dual adjustable cable pulley systems","Functional trainer / crossover capability","Adjustable safety catches and bar supports","Adjustable incline / flat workout bench","Pull-up / chin-up bars","Multiple cable attachments","Integrated weight-plate storage","Weight-stack / cable resistance system","Plate-loaded training capability","Heavy-duty steel frame","Multiple users can potentially train at the same time"],
+    bestFor:"Commercial gyms, hotels, fitness centres, sports facilities and high-end home gyms",
+    build:"Heavy-duty steel frame with guided bars, cable stations and integrated storage",
+    specifications:["Smith machine squats, bench press and incline / flat pressing","Deadlifts and shoulder press","Pull-ups, chin-ups and cable crossover","Cable fly, lat pulldown variations and seated rows","Triceps, biceps, functional training and full-body strength work"],
+    image:"https://res.cloudinary.com/ddgs5x2qd/image/upload/v1789819148/WhatsApp_Image_2026-09-19_at_00.26.06_e4k4o8.jpg",
+    images:["https://res.cloudinary.com/ddgs5x2qd/image/upload/v1789819148/WhatsApp_Image_2026-09-19_at_00.26.06_e4k4o8.jpg"],
+    wa:"Commercial%20Multifunctional%20Smith%20Machine%20and%20Functional%20Trainer"
+  },
+  {
     id:20, num:"20", cat:"all", audience:["both"], space:"small", usage:"light",
     tag:"Can't Find It?", name:"We'll Source It For You",
     desc:"See a piece of equipment you want but can't find it here? Send us a photo on WhatsApp and we'll source it for you.",
