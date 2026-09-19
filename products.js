@@ -17,14 +17,14 @@ const DEFAULT_PRODUCTS = [
     wa:"Iron%20Throne%20Bench%20Press"
   },
   {
-    id:2, num:"02", cat:"benches", audience:["both"], space:"medium", usage:"heavy", subcat:"racks",
+    id:2, num:"02", cat:"benches", audience:["commercial"], space:"medium", usage:"heavy", subcat:"racks",
     tag:"Benches & Racks", name:"Power Rack / Power Cage",
     desc:"Full safety cage for heavy squats, bench and deadlifts. Built for maximum load, maximum safety.",
     features:["Heavy-gauge steel cage","Adjustable safety spotter arms","Pull-up bar included","Commercial & home builds"],
     image:"https://res.cloudinary.com/ddgs5x2qd/image/upload/v1774021568/power_cage_nmgum7.png", wa:"Power%20Rack"
   },
   {
-    id:3, num:"03", cat:"benches", audience:["both"], space:"medium", usage:"heavy", subcat:"racks",
+    id:3, num:"03", cat:"benches", audience:["commercial"], space:"medium", usage:"heavy", subcat:"racks",
     tag:"Benches & Racks", name:"Squat Rack / Half Rack",
     desc:"Compact open-front rack. Squats, overhead press, bench — no cage needed. Space-efficient for any gym.",
     features:["Adjustable bar catches","Spotter arms on both sides","Plate storage pegs","Commercial & personal builds"],
