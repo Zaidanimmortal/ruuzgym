@@ -208,6 +208,22 @@ const DEFAULT_PRODUCTS = [
     wa:"Commercial%20Multifunctional%20Smith%20Machine%20and%20Functional%20Trainer"
   },
   {
+    id:24, num:"24", cat:"cardio", subcat:"bikes", audience:["both"], space:"medium", usage:"moderate",
+    tag:"Cardio · Exercise Bikes", name:"Exercise Bike",
+    desc:"A versatile exercise bike for low-impact cardio, endurance training and everyday fitness at home or in a commercial gym.",
+    features:["Low-impact cardio training","Adjustable workout position","Endurance and fitness training","Suitable for home and commercial gyms"],
+    bestFor:"Home gyms, studios, hotels and commercial gyms",
+    build:"Durable exercise-bike construction for regular cardio training",
+    specifications:["Low-impact cycling workouts","Everyday cardio and endurance training","Suitable for personal and supervised gym use"],
+    image:"https://res.cloudinary.com/ddgs5x2qd/image/upload/v1789821365/WhatsApp_Image_2026-09-19_at_14.57.20_ka9bgk.jpg",
+    images:[
+      "https://res.cloudinary.com/ddgs5x2qd/image/upload/v1789821365/WhatsApp_Image_2026-09-19_at_14.57.20_ka9bgk.jpg",
+      "https://res.cloudinary.com/ddgs5x2qd/image/upload/v1789821365/WhatsApp_Image_2026-09-19_at_14.57.21_jekhkk.jpg",
+      "https://res.cloudinary.com/ddgs5x2qd/image/upload/v1789821364/WhatsApp_Image_2026-09-19_at_14.57.21_1_xarsdx.jpg"
+    ],
+    wa:"Exercise%20Bike"
+  },
+  {
     id:20, num:"20", cat:"all", audience:["both"], space:"small", usage:"light",
     tag:"Can't Find It?", name:"We'll Source It For You",
     desc:"See a piece of equipment you want but can't find it here? Send us a photo on WhatsApp and we'll source it for you.",
