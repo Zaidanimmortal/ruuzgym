@@ -27,7 +27,11 @@ function renderProducts(filterCat){
   const cat = filterCat || 'all';
   const audience = currentAudience || 'all';
 
-  PRODUCTS.forEach(p => {
+  const orderedProducts = cat === 'all' ? [...PRODUCTS].sort((a,b)=>{
+    const rank = p => p.id === 19 ? 998 : p.id === 20 ? 999 : p.id;
+    return rank(a) - rank(b);
+  }) : PRODUCTS;
+  orderedProducts.forEach(p => {
     const cardioSub = cat.startsWith('cardio-') ? cat.slice(7) : '';
     const benchRackSub = cat.startsWith('benches-') ? cat.slice(8) : '';
     const audienceMatch = audience === 'all' || (p.audience||['both']).includes(audience) || (p.audience||[]).includes('both');
