@@ -201,7 +201,10 @@ const DEFAULT_PRODUCTS = [
     build:"Heavy-duty steel frame with guided bars, cable stations and integrated storage",
     specifications:["Smith machine squats, bench press and incline / flat pressing","Deadlifts and shoulder press","Pull-ups, chin-ups and cable crossover","Cable fly, lat pulldown variations and seated rows","Triceps, biceps, functional training and full-body strength work"],
     image:"https://res.cloudinary.com/ddgs5x2qd/image/upload/v1789819148/WhatsApp_Image_2026-09-19_at_00.26.06_e4k4o8.jpg",
-    images:["https://res.cloudinary.com/ddgs5x2qd/image/upload/v1789819148/WhatsApp_Image_2026-09-19_at_00.26.06_e4k4o8.jpg"],
+    images:[
+      "https://res.cloudinary.com/ddgs5x2qd/image/upload/v1789819148/WhatsApp_Image_2026-09-19_at_00.26.06_e4k4o8.jpg",
+      "https://res.cloudinary.com/ddgs5x2qd/image/upload/v1789820887/WhatsApp_Image_2026-09-19_at_00.26.05_xbrbte.jpg"
+    ],
     wa:"Commercial%20Multifunctional%20Smith%20Machine%20and%20Functional%20Trainer"
   },
   {
