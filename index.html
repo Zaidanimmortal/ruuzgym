@@ -28,7 +28,7 @@ function renderProducts(filterCat){
   const audience = currentAudience || 'all';
 
   const orderedProducts = cat === 'all' ? [...PRODUCTS].sort((a,b)=>{
-    const rank = p => p.id === 19 ? 998 : p.id === 20 ? 999 : p.id;
+    const rank = p => p.id === 19 ? 998 : p.id === 20 ? 999 : p.id === 18 ? 1000 : p.id;
     return rank(a) - rank(b);
   }) : PRODUCTS;
   orderedProducts.forEach(p => {
