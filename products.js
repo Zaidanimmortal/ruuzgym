@@ -219,7 +219,9 @@ const DEFAULT_PRODUCTS = [
     images:[
       "https://res.cloudinary.com/ddgs5x2qd/image/upload/v1789821365/WhatsApp_Image_2026-09-19_at_14.57.20_ka9bgk.jpg",
       "https://res.cloudinary.com/ddgs5x2qd/image/upload/v1789821365/WhatsApp_Image_2026-09-19_at_14.57.21_jekhkk.jpg",
-      "https://res.cloudinary.com/ddgs5x2qd/image/upload/v1789821364/WhatsApp_Image_2026-09-19_at_14.57.21_1_xarsdx.jpg"
+      "https://res.cloudinary.com/ddgs5x2qd/image/upload/v1789821364/WhatsApp_Image_2026-09-19_at_14.57.21_1_xarsdx.jpg",
+      "https://res.cloudinary.com/ddgs5x2qd/image/upload/v1789831683/WhatsApp_Image_2026-09-19_at_14.57.21_7_divdby.jpg",
+      "https://res.cloudinary.com/ddgs5x2qd/image/upload/v1789831638/WhatsApp_Image_2026-09-19_at_14.57.21_6_qdhnso.jpg"
     ],
     wa:"Exercise%20Bike"
   },
