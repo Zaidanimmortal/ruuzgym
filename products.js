@@ -155,14 +155,6 @@ const DEFAULT_PRODUCTS = [
     image:"https://i.pinimg.com/1200x/40/7a/6c/407a6c47abc25c375d15bf6864417fd8.jpg", wa:"Equipment%20Repairs%20and%20Assembly"
   },
   {
-    id:19, num:"19", cat:"all", audience:["both"], space:"large", usage:"heavy",
-    tag:"Commercial & Personal", name:"Full Gym Packages",
-    desc:"Setting up from scratch? We supply, deliver and install everything. Hotels, schools, corporates, home gyms.",
-    features:["Complete setup — one supplier","Commercial & home builds","Delivery & installation","Hotels, schools & corporates"],
-    image:"https://i.pinimg.com/1200x/b5/ee/56/b5ee56a486455cf6c26cc2a9a8db7fc8.jpg", wa:"Full%20Gym%20Package",
-    special:"green"
-  },
-  {
     id:21, num:"21", cat:"machines", audience:["commercial"], space:"large", usage:"heavy",
     tag:"Strength Equipment · Commercial", name:"Multifunctional Smith Machine Power Rack",
     desc:"All-in-one strength station featuring a Smith machine, power rack, cable pulley system, adjustable bench, pull-up bar and weight-plate storage. Designed for comprehensive full-body strength training.",
@@ -191,6 +183,14 @@ const DEFAULT_PRODUCTS = [
       "https://res.cloudinary.com/ddgs5x2qd/image/upload/v1789764914/WhatsApp_Image_2026-09-18_at_23.53.24_lfjbfd.jpg"
     ],
     wa:"Multifunctional%20Home%20Gym%20All-in-One%20Gym%20Station"
+  },
+  {
+    id:19, num:"19", cat:"all", audience:["both"], space:"large", usage:"heavy",
+    tag:"Commercial & Personal", name:"Full Gym Packages",
+    desc:"Setting up from scratch? We supply, deliver and install everything. Hotels, schools, corporates, home gyms.",
+    features:["Complete setup — one supplier","Commercial & home builds","Delivery & installation","Hotels, schools & corporates"],
+    image:"https://i.pinimg.com/1200x/b5/ee/56/b5ee56a486455cf6c26cc2a9a8db7fc8.jpg", wa:"Full%20Gym%20Package",
+    special:"green"
   },
   {
     id:20, num:"20", cat:"all", audience:["both"], space:"small", usage:"light",
