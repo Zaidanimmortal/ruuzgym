@@ -239,7 +239,7 @@ const DEFAULT_PRODUCTS = [
 const ADMIN_PASSWORD = "$$Mrzaidruuzgym1999$$";
 const STORAGE_KEY     = "ruuzgym_products";
 const VERSION_KEY     = "ruuzgym_version";
-const CURRENT_VERSION = "v6";
+const CURRENT_VERSION = "v7";
 
 function loadProducts(){
   try {
@@ -251,10 +251,15 @@ function loadProducts(){
     const saved = localStorage.getItem(STORAGE_KEY);
     if(saved){
       const parsed = JSON.parse(saved);
-      // Merge: keep defaults for any new products, update saved fields
+      // Merge: keep defaults for new products and preserve newly published gallery images
       return DEFAULT_PRODUCTS.map(def => {
         const s = parsed.find(p => p.id === def.id);
-        return s ? {...def, ...s} : def;
+        if(!s) return def;
+        const merged = {...def, ...s};
+        if(def.images || s.images){
+          merged.images = [...new Set([...(def.images || []), ...(s.images || [])])];
+        }
+        return merged;
       });
     }
   } catch(e){}
